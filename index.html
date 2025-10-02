@@ -325,59 +325,130 @@
               Preencha seus dados e sua mensagem:
             </p>
 
-            <div class="contaCampo contato-Campo-sucesso">
-              <label>Nome:</label>
-              <input type="text" class="contatoCampo--validouFoi" value="Gabriel Gonçalves" required>
+            <div class="contatoCampo contatoCampo-sucesso">
+              <label>Nome: </label>
+              <input type="text" class="contatoCampo--validouFoi" value="Bruna Kwiatkovski" required>
             </div>
 
-             <div class="contaCampo contato-Campo-erro">
-              <label>Email:</label>
+            <div class="contatoCampo contatoCampo-erro">
+              <label>Email: </label>
               <input type="email" class="contatoCampo--validouErro" required>
-              <span class="contatoCampo-msg contatoCampo-msg--erro">
+              <span class="contatoCampo-msg contatoCampo-msg--erro" >
                 Você quis dizer <a href="#">gmail.com</a>
-              </span> 
+              </span>
             </div>
 
-             <div class="contaCampo contato-Campo-erro">
-              <label>Telefone:</label>
+             <div class="contatoCampo contatoCampo-erro">
+              <label>Telefone: </label>
               <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
-              <span class="contatoCampo-msg contatoCampo-msg--erro">
-               Faltou o DDD
-              </span> 
+              <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
             </div>
 
             <div class="contatoCampo">
               <label>CEP:</label>
-              <input type="text" maxlength="8" placeholder="exemplo:04101-300" required>
+              <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
             </div>
-            
+
             <div class="contatoCampo">
-              <label>Endereço</label>
-              <input type="text" class="contatoCampo-cammpoDesabilitado" disabled value="Rua Vargueiro">
+              <label>Endereço:</label>
+              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+            </div>
+
+            <div class="contatoCampo">
+              <label>Bairro:</label>
+              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+            </div>
+
+            <div class="contatoCampo">
+              <label>Cidade:</label>
+              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+            </div>
+
+            <div class="contatoCampo">
+              <label>Estado:</label>
+              <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
             </div>
 
              <div class="contatoCampo">
-              <label>Bairro</label>
-              <input type="text" class="contatoCampo-cammpoDesabilitado" disabled value="Vila Mariana">
+              <label>Mensagem:</label>
+              <textarea name="" cols="30" rows="10" required></textarea>
             </div>
 
-            
-             <div class="contatoCampo">
-              <label>Cidade</label>
-              <input type="text" class="contatoCampo-cammpoDesabilitado" disabled value="São Paulo">
+            <div class="contatoCampo">
+              <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+              <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
             </div>
 
-            
-             <div class="contatoCampo">
-              <label>Estado</label>
-              <input type="text" class="contatoCampo-cammpoDesabilitado" disabled value="SP">
+            <div class=" contatoCampo">
+              <button class="secaoContato-cta btnPadrao" type="submit">
+                Enviar Mensagem
+              </button>
+              <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
+                Verifique os erros acima
+              </span>
             </div>
           </form>
         </div>
     </section><!--fim.secaoContato-->
 
- 
+    <section class="secaoInstitucional"><!--Início de secao-->
+        <div class="container">
+          <h2 class="tituloPadrao">
+            INSTITUCIONAL
+          </h2>
+          <div class="secaoInstitucional-coluna">
+            <p>
+              Um pouco mais sobre a Apeperia
+            </p>
+            <address class="secaoInstitucional-endereco">
+              Rua Vergueiro, 3185 <br> Vila Mariana, São Paulo
+            </address>
+            <p class="secaoInstitucional-telefone">
+              (11) 5571-2571 ou <a href="#">contato@apeperia.com</a>
+            </p>
+          </div>
 
-</main>    
+          <video src="img/formacao-java.mp4" class="secaoInstitucional-video">
+          </video>
+        </div>
+    </section><!--fim. secaoInstitucional-->
+  </main>  
+ 
+  <footer class="rodape">
+    <div class="container">
+      <img src="APP Acessibilidade/src/img/logo-apeperia.svg" class="rodape-logo" alt="Logotipo apeperia">
+
+      <ul class="rodape-social">
+        <li>
+          <a href="#" class="rodape-social-link rodape-social-link--facebook">
+            Facebook da Apeperia
+          </a>
+        </li>
+        <li>
+          <a href="#" class="rodape-social-link rodape-social-link--twitter">
+            Twitter da Apeperia
+          </a>
+        </li>
+        <li>
+          <a href="#" class="rodape-social-link rodape-social-link--instagram">
+            Instagram da Apeperia
+          </a>
+        </li>
+      </ul>
+
+      <nav class="rodape-nav">
+        <ul>
+          <li class="rodape-nav-item"><a href="#" class="rodape-nav-link">Sobre</a></li>
+          <li class="rodape-nav-item"><a href="#" class="rodape-nav-link">Planos</a></li>
+          <li class="rodape-nav-item"><a href="#" class="rodape-nav-link">Blog</a></li>
+          <li class="rodape-nav-item"><a href="#" class="rodape-nav-link">Destaques</a></li>
+          <li class="rodape-nav-item"><a href="#" class="rodape-nav-link">Institucional</a></li>
+          <li class="rodape-nav-item"><a href="#" class="rodape-nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/carousel.js"></script>
+  <script src="js/dialog.js"></script>
 </body>
 </html>
